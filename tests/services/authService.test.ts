@@ -2,11 +2,11 @@ import AuthService from '../../src/services/authService';
 import UserRepository from '../../src/repositories/userRepository';
 import Boom from '@hapi/boom';
 import User from '../../src/models/userModels';
-import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
+const bcrypt = require('bcryptjs');
 
-jest.mock('../../src/repositories/userRepository');
-jest.mock('bcrypt');
+jest.mock('../../src/repositories/userRepository'); 
+jest.mock('bcryptjs');
 jest.mock('jsonwebtoken'); 
 
 const userRepositoryMock = new UserRepository() as jest.Mocked<UserRepository>;
