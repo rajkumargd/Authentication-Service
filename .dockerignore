@@ -19,3 +19,4 @@ docker-compose.yml
 package-lock.json
 
 .DS_Store
+README.md

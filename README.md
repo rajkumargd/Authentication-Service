@@ -28,7 +28,7 @@ Following Instructions are common for all the repos
       ```
    * Docker
       ```
-      docker compose up
+      docker compose up --build
       ```
 
 3. Set up environment variables:
@@ -74,6 +74,10 @@ To run the test suite:
 
    ```
    CMD ["npm", "run", "test"]
+   ```
+   Execute the Command
+   ```
+      docker compose up --build
    ```
 
 ## Deployment Notes
